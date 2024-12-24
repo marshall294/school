@@ -1,3 +1,10 @@
 {
-  "cleanUrls": true
+  "version": 2,
+  "redirects": [
+    {
+      "source": "/:path*.html",
+      "destination": "/:path*",
+      "permanent": true
+    }
+  ]
 }
