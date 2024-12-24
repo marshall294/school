@@ -1,10 +1,7 @@
 {
-  "version": 2,
-  "redirects": [
-    {
-      "source": "/:path*.html",
-      "destination": "/:path*",
-      "permanent": true
+  "functions": {
+    "api/users/**/*.js": {
+      "maxDuration": 30
     }
-  ]
+  }
 }
