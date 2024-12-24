@@ -361,7 +361,7 @@ document.getElementById("welcomeMessage").innerHTML = `
                     console.error("Error fetching user data from Firestore: ", error);
                 });
             } else {
-                window.location.href = "/index";
+                window.location.href = "/index.html";
             }
         });
 
@@ -396,7 +396,7 @@ document.getElementById("welcomeMessage").innerHTML = `
 
         window.logoutUser = function logoutUser() {
             signOut(auth).then(() => {
-                window.location.href = "/index";
+                window.location.href = "/index.html";
             }).catch((error) => {
                 console.error("Error logging out: ", error);
             });
